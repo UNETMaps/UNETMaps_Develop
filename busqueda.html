@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!--descarga los iconos desde google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importa el css de materialize-->
+    <link type="text/css" rel="stylesheet" href="Materialize/css/materialize.css"  />
+    <title>Busqueda</title>
+    <!--se agrega para evitar zoom y definir pantallas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+<header>
+
+    <!--barra azul de la cabecera-->
+<div class="navbar-fixed">
+         
+		<!--listas desplegables-->					
+			<ul id="dropdown3" class="dropdown-content">
+			  <li><a href="#!">Edificio A</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#!">Edificio B</a></li>
+			   <li class="divider"></li>
+			  <li><a href="#!">Edificio C</a></li>
+			</ul>
+			
+			
+					
+			<ul id="dropdown4" class="dropdown-content">
+			  <li><a href="#!">Edificio A</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#!">Edificio B</a></li>
+			   <li class="divider"></li>
+			  <li><a href="#!">Edificio C</a></li>
+			</ul>
+			
+			
+
+    <nav>
+	
+
+        <div class="nav-wrapper blue darken-1">
+            <a href="#!" class="brand-logo" >UNET Maps</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          
+	 
+		<ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Edificio<i class="material-icons right"> arrow_drop_down</i></a></li>
+            <li><a href="badges.html">Busqueda</a></li>
+            <li><a href="mobile.html">Inicio</a></li>
+		
+            </ul>
+			
+			
+		
+
+<!--menu configuracion lado derecho-->
+			<div class="row">
+                <a class="right dropdown-button " href="#!" data-activates="topRightDrop"><i class="mdi-navigation-more-vert"></i></a>
+                <ul id="topRightDrop" class="dropdown-content left-align">
+                   <li><a href="Configurar.html" class="modal-trigger">Configurar</a></li>
+                   <li><a href="CerrarSesion.html">Salir</a></li>
+                </ul>
+            </div>
+            
+			
+			
+
+<!--menu expandible al reducir pantalla-->
+			
+
+            <ul class="side-nav " id="mobile-demo">
+               <li><a class='dropdown-button blue darken-8' href='#' data-activates='dropdown3' >Edificio<i class="right mdi-navigation-expand-more"></i></a></li>
+                <li class="divider"></li>
+                <li><a class=" blue darken-8" href="Busqueda.html">Busqueda</a></li>
+                <li class="divider"></li>
+                <li><a class=" blue darken-8" href="Inicio.html">Inicio</a></li>
+            </ul>
+
+
+
+        </div>
+    </nav>
+
+</div>
+</header>
+
+<main>
+
+
+    <!--al hacer click en una pesta#a abrira la accion en su id correspondiente-->
+    <div class="container">
+        <div class="center row">
+                <h4><a class="col s12" >Búsqueda</a></h4>
+        </div> 
+
+      <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Seleccione un Edificio</option>
+              <option value="1">Edificio A</option>
+              <option value="2">Edificio B</option>
+              <option value="3">Edificio C</option>
+            </select>
+      </div>
+
+      <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Seleccione un Espacio</option>
+              <option value="1">Aula</option>
+              <option value="2">Laboratorio</option>
+              <option value="3">Departamento</option>
+            </select>
+      </div>
+
+        <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Seleccione Capacidad</option>
+              <option value="1">50</option>
+              <option value="2">40</option>
+              <option value="3">30</option>
+            </select>
+      </div>
+
+        <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Seleccione Valoración</option>
+              <option value="1">3 Estrellas</option>
+              <option value="2">4 Estrellas</option>
+              <option value="3">5 Estrellas</option>
+            </select>
+      </div>
+
+    
+    <form action="#">
+        <div>Caracteristicas
+            <p>
+              <input type="checkbox" id="test1"/>
+              <label for="test1">Aire Acondicionado</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="test2"/>
+              <label for="test2">Video Beam</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="test3"/>
+              <label for="test3">Mesas</label>
+            </p> 
+        </div>  
+    </form>
+
+    <!--Buscar-->
+   <div class="center row" style="margin: -10px"> 
+    <button class="btn" type="submit" name="action">Buscar
+    <i class="material-icons right">send</i>
+   </div>
+
+	</div>
+
+
+   
+   </main>
+
+
+<!--footer-->
+<footer class="page-footer blue darken-1 ">
+    <div class="footer-copyright center-align">
+        <div class="container">
+            © 2016 UNET MAPS Derechos Reservados.
+
+        </div>
+    </div>
+</footer>
+
+
+<!--llamado de los .min y .js para realizar funciones de animacion-->
+<script type="text/javascript" src="Materialize/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="Materialize/js/materialize.js"></script>
+<script type="text/javascript" src="Materialize/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="Materialize/js/jquery.rwdImageMaps.min.js"></script>
+
+<script> $(document).ready(function() {
+    $(".button-collapse").sideNav();
+	$(".dropdown-button").dropdown();
+		
+    $('.dropdown-button1').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: false, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: false, // Displays dropdown below the button
+                alignment: 'left' // Displays dropdown with edge aligned to the left of button
+            }
+    );
+    $('img[usemap]').rwdImageMaps();//llama a la funcion q redimensiona la pantalla para el mapeo
+
+
+});
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+
+
+  $('select').material_select('destroy');
+            
+
+</script>
+
+</body>
+</html>
